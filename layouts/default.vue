@@ -1,13 +1,16 @@
+
 <template>
   <div>
     <the-header @sidenavToggle="displaySidenav = !displaySidenav"/>
 
     <the-side-nav :show="displaySidenav" @close="displaySidenav = false"/>
+    
     <nuxt/>
   </div>
 </template>
 
 <script>
+/* eslint-disabled */ 
 import TheHeader from '@/components/Navigation/TheHeader'
 import TheSideNav from '@/components/Navigation/TheSidenav'
 
@@ -21,7 +24,6 @@ export default {
       displaySidenav : false
     }
   }
-  
 }
 </script>
 
